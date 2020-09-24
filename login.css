@@ -8,12 +8,13 @@ body {
 }
 
 
-/* image login header */
+/* image login */
 #login h1 a, .login h1 a  {
     /*background-image: url('http://localhost/wpdev.com/wp-content/themes/childmaster-wpdev/images/login-user.png');
-  	/*background-size: 150px;
+    background-size: 150px;
     width: auto;
     height: 150px; */   
+	
     display: none;
 }
 
@@ -62,7 +63,7 @@ span.login_error {
 	border:0px;	
 }
 
-
+/* end  custom login header - dashicons */
 
 form {
 	margin: auto;
