@@ -1,12 +1,12 @@
 <?php
 
 
-
 /* -----------------------------------------------------------------------------
- * Force wordpress read  style sheet and JS at Wp-admin login
+ * Force wordpress read  CSS and JS at Wp-admin login
  * ----------------------------------------------------------------------------- */
  
 function WpdevLogin() {
+	
     if ( isset( $GLOBALS['pagenow'] ) && $GLOBALS['pagenow'] === 'wp-login.php' ) {
         
         //css
@@ -26,8 +26,8 @@ function WpdevLogin() {
  * ----------------------------------------------------------------------------- */
 
 function UrlLogoLogin() {
+	
     return get_bloginfo( 'url' );
-}
-
-add_filter( 'login_headerurl', 'UrlLogoLogin' );
+	
+}add_filter( 'login_headerurl', 'UrlLogoLogin' );
 
