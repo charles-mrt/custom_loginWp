@@ -13,5 +13,5 @@ Altere o visual do login do Wordpress sem plugins
 </p>
 
 <p align="center">
-  <img src="https://plimm.com.br/wp-content/uploads/Untitled-Project1.gif" />
+  <img src="https://plimm.com.br/wp-content/uploads/wp-login.gif" />
 </p>
