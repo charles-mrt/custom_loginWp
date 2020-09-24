@@ -1,0 +1,111 @@
+
+
+body {
+	background: #2b2828;
+	background-image: url('http://localhost/wpdev.com/wp-content/themes/childmaster-wpdev/images/background.png');
+	background-position: center; 
+  	background-repeat: no-repeat;   	
+}
+
+
+/* image login header */
+#login h1 a, .login h1 a  {
+    /*background-image: url('http://localhost/wpdev.com/wp-content/themes/childmaster-wpdev/images/login-user.png');
+  	/*background-size: 150px;
+    width: auto;
+    height: 150px; */   
+    display: none;
+}
+
+#login{
+	width: 420px;	
+}
+
+/* custom login header - dashicons */
+.login-header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.login-header span{
+	height: auto;
+	width: auto;
+	transition: 0.4s;
+}
+
+span.user-icon {
+	font-size: 150px;
+	border: 3px solid #939393;
+	border-radius: 50%;
+	padding: 5px;		
+	color: rgba(255, 255, 255, 0.80);
+}
+
+span.lock-icon {
+	font-size: 50px;	
+	margin-top: -50px;
+	color: rgba(191, 191, 191, 0.87);
+}
+
+span.user-show{
+	color: #00a0d2;
+	
+}
+span.lock-show{	
+	color:#00a0d2;
+}
+
+span.login_error {
+	box-shadow: 0px 0px 66px 13px rgb(255, 62, 62);
+	background-color: rgba(255, 8, 8, 0.44);
+	border:0px;	
+}
+
+
+
+form {
+	margin: auto;
+	background: rgba(0,0,0,0.4)!important;
+	height: 300px;
+	color: #fff;
+	border:0px!important;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.35)!important;
+}
+
+form input[type="text"],
+form input[type="password"] {
+	color: #fff;
+	background-color: #443c3c!important;
+	padding:10px!important;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+	background-color: #3a3131!important;
+}
+
+/*show password type text*/
+.button.button-secondary{
+	min-height: 50px!important;
+}
+
+
+/*button*/
+input[type="submit"] {
+	width: 100%;
+	font-size: 25px!important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color:#673ab7!important;
+	font-weight: 100;
+	transition: 0.4s;
+}
+input[type="submit"]:hover {
+	background-color: #7e4fd1!important;
+}
+
+#nav a, #backtoblog a {
+	color: #ffffff!important;
+}
