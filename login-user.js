@@ -5,6 +5,7 @@ var userIcon = document.createElement( "span" )
 var lockIcon = document.createElement( "span" )
 
 
+/* create header with wp with dash-icons */
 function createUserIcons() {         
     contentBox.classList.add( "login-header" )
     userIcon.classList.add( "user-icon", "dashicons", "dashicons-businessperson" )          
@@ -19,7 +20,7 @@ function createUserIcons() {
 } createUserIcons()
 
 
-
+/*captures event in the input by click and changes dash-icons */
 function shiftUserIconByInputClick() {	
 
 	addEventListener( "click" , ( event ) => {
@@ -48,7 +49,7 @@ function shiftUserIconByInputClick() {
 } shiftUserIconByInputClick()
 
 
-
+/* triggers alert on dash-icons when login error */
 function errorLogin() {
     const login_error = document.querySelector( "#login_error" )
 
