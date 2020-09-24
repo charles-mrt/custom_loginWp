@@ -1,4 +1,4 @@
-# custon_loginWp
+# custom_loginWp
 <p align="center">
 Altere o visual do login do Wordpress sem plugins
 </p>
