@@ -22,27 +22,28 @@ function createUserIcons() {
 
 /* focus the input filds to changes dash-icons color */
 function shiftUserIconByFocus() {	
-
+    
     const inputnameId = document.querySelector( "#user_login" )
     const inputpasswordId = document.querySelector( "#user_pass" )
-    
-        inputnameId.addEventListener( "focus" , () => {
-            userIcon.classList.add( "user-show" )    
-        }) 
 
-        inputpasswordId.addEventListener('focus', () => {
-            lockIcon.classList.add( "lock-show" )    
-        })
+    inputnameId.addEventListener( "focus" , () => {
+        userIcon.classList.add( "user-show" )    
+    }) 
 
-        inputnameId.addEventListener( "blur" , () => {
-            userIcon.classList.remove( "user-show" )  
-        })
+    inputpasswordId.addEventListener('focus', () => {
+        lockIcon.classList.add( "lock-show" )    
+    })
 
-        inputpasswordId.addEventListener('blur', () => {
-            lockIcon.classList.remove( "lock-show" )                
-        })
-	
+    inputnameId.addEventListener( "blur" , () => {
+        userIcon.classList.remove( "user-show" )  
+    })
+
+    inputpasswordId.addEventListener('blur', () => {
+        lockIcon.classList.remove( "lock-show" )                
+    })	
+ 
 } shiftUserIconByFocus()
+
 
 
 
