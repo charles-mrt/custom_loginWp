@@ -20,37 +20,35 @@ function createUserIcons() {
 } createUserIcons()
 
 
-/*captures event in the input by click and changes dash-icons */
-function shiftUserIconByInputClick() {	
+/* focus the input filds to changes dash-icons color */
+function shiftUserIconByFocus() {	
 
-	addEventListener( "click" , ( event ) => {
+    const inputnameId = document.querySelector( "#user_login" )
+    const inputpasswordId = document.querySelector( "#user_pass" )
+    
+        inputnameId.addEventListener( "focus" , () => {
+            userIcon.classList.add( "user-show" )    
+        }) 
 
-        const inputnameId = document.querySelector( "#user_login" )
-        const inputpasswordId = document.querySelector( "#user_pass" )
-    	
-        const isInputname = inputnameId.contains( event.target )
-    	const isInputpassword = inputpasswordId.contains( event.target )
-    	
+        inputpasswordId.addEventListener('focus', () => {
+            lockIcon.classList.add( "lock-show" )    
+        })
 
-        if ( isInputname ) {
-            userIcon.classList.add( "user-show" )
-            lockIcon.classList.remove( "lock-show" )                   
-        }
-        else if ( isInputpassword ) {
-            lockIcon.classList.add( "lock-show" )   
-            userIcon.classList.remove( "user-show" )
-        }else{
-            lockIcon.classList.remove( "lock-show" )   
-            userIcon.classList.remove( "user-show" ) 
-        }
+        inputnameId.addEventListener( "blur" , () => {
+            userIcon.classList.remove( "user-show" )  
+        })
 
-    })
- 
-} shiftUserIconByInputClick()
+        inputpasswordId.addEventListener('blur', () => {
+            lockIcon.classList.remove( "lock-show" )                
+        })
+	
+} shiftUserIconByFocus()
+
 
 
 /* triggers alert on dash-icons when login error */
 function errorLogin() {
+	
     const login_error = document.querySelector( "#login_error" )
 
     if ( login_error ) {
