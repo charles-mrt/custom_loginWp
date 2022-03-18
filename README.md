@@ -13,5 +13,5 @@ Altere o visual do login do Wordpress sem plugins
 </p>
 
 <p align="center">
-  <img src="src='https://i.postimg.cc/rFC12vGq/wp-login.gif" />
+  <img src="https://i.postimg.cc/rFC12vGq/wp-login.gif" />
 </p>
